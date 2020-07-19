@@ -6,11 +6,13 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import axios from 'axios'
+import less from 'less'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
 axios.defaults.baseURL = "/api";
 Vue.use(ElementUI)
+Vue.use(less)
 
 /* eslint-disable no-new */
 new Vue({

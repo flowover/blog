@@ -4,30 +4,31 @@ import seat from '@/components/seat'
 import HelloWorld from '@/components/HelloWorld'
 import tab from '@/components/tab'
 import login from '@/components/login'
+import index from '@/components/index'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'seat',
-    //   component: seat
-    // },
-    // {
-    //   path: '/',
-    //   name: 'HelloWorld',
-    //   component: HelloWorld
-    // },
-    // {
-    //   path: '/',
-    //   name: 'tab',
-    //   component: tab
-    // },
     {
       path: '/',
-      name: 'login',
-      component: login
+      name: 'index',
+      component: index
+    },
+    {
+      path: '/seat',
+      name: 'seat',
+      component: seat
+    },
+    {
+      path: '/HelloWorld',
+      name: 'HelloWorld',
+      component: HelloWorld
+    },
+    {
+      path: '/tab',
+      name: 'tab',
+      component: tab
     }
   ]
 })
